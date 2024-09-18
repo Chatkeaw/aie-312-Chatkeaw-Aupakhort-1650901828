@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCE4EC;
+    color: #333;
+    font-family: "Mali", system-ui;
+    font-weight: 500;
+}
+
+header {
+    background-color: #FF4081;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.container-1, .container-2, .container-3 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.frame-emojicon {
+    font-size: 33px;
+    margin-right: 20px;
+    background-color: #fdbad0;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-emojicon a {
+    text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+    color: inherit; /* ใช้สีเดียวกับองค์ประกอบรอบๆ */
+}
+
+
+.link a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FF4081;
+    font-size: 18px;
+    padding: 8px 12px; /* เพิ่ม padding */
+    border: 2px solid #FF4081; /* เพิ่มขอบ */
+    border-radius: 20px; /* ทำให้ขอบโค้งมน */
+    background-color: white; /* พื้นหลังสีขาว */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+.link a:hover {
+    color: white; /* เปลี่ยนสีตัวอักษร */
+    background-color: #E91E63; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+    border-color: #E91E63; /* เปลี่ยนสีขอบเมื่อโฮเวอร์ */
+}
+
+
+.link a:active {
+    background-color: #FF4081; /* เปลี่ยนพื้นหลังเมื่อคลิก */
+    color: white; /* เปลี่ยนสีตัวอักษรเมื่อคลิก */
+}
+
+.search-login input[type="text"] {
+    padding: 10px 15px; /* เพิ่มขนาดของ padding */
+    border: 2px solid #FF4081;
+    border-radius: 25px; /* ทำให้ขอบโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    outline: none; /* ลบเส้นขอบตอนโฟกัส */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+.search-login input[type="text"]:focus {
+    border-color: #E91E63; /* เปลี่ยนสีขอบเมื่อโฟกัส */
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2); /* เพิ่มเงาเมื่อโฟกัส */
+}
+
+
+.search-login a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF4081;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนแปลงเพื่อทำให้ดูเรียบ */
+}
+
+.search-login a:hover,
+.search-login a:focus {
+    background-color: #E91E63;
+    outline: none; /* เอาขอบที่ปรากฏเมื่อมีการโฟกัสออก */
+}
+
+.search-login a:active {
+    background-color: #C2185B; /* เปลี่ยนสีเมื่อคลิก */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* เพิ่มเงาด้านในเพื่อให้รู้สึกถึงการกด */
+}
+
+
+.box-conent-1 h1 {
+    font-size: 32px;
+    color: #FF4081;
+}
+
+.box-conent-1 p {
+    font-size: 18px;
+}
+
+.box-conent-1 img {
+    width: 100%;
+    max-width: 600px; /* ปรับขนาดสูงสุดของรูปภาพ */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto; /* จัดให้อยู่ตรงกลาง */
+    margin-right: auto; /* จัดให้อยู่ตรงกลาง */
+    display: block; /* ทำให้รูปภาพอยู่ตรงกลาง */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ชัดเจนขึ้น */
+     /* เพิ่มกรอบรอบรูปภาพ */
+}
+
+
+.box-medium {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-box {
+    width: 50px;
+    height: 50px;
+    background-color: #FF4081;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-box {
+    background-color: #FF4081;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.right-container .right-box a {
+    text-decoration: none; /* เอาขีดเส้นใต้ของลิงก์ออก */
+    color: inherit; /* ใช้สีข้อความเดียวกับองค์ประกอบรอบ ๆ */
+}
+
+.location-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FF4081;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.location-icon.location-icon a { 
+    text-decoration: none;
+}
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-gallery a {
+    flex: 1 1 23%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #FF4081;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link {
+        margin-top: 10px;
+    }
+
+    .search-login {
+        margin-top: 10px;
+    }
+
+    .image-gallery a {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-gallery a {
+        flex: 1 1 100%;
+    }
+}
